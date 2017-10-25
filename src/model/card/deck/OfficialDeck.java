@@ -14,46 +14,19 @@ import model.card.type.isPlayableOver.UncoloredIsPlayableOverStrategy;
  * @author daraya
  *
  */
-public class OfficialDeck implements IDeckStrategy {
+public class OfficialDeck extends DeckStrategy {
 
-    private ICardPile deck = new CardPile();
-
-    @Override
-    public ICardPile createDeck() {
-        createNotZeros();
-        createNotZeros();
-        createZeros();
-        createActionCards();
-        createWildCards();
-        deck.shuffle();
-        return deck;
-    }
-
-    private void createZeros() {
-        deck.pushCard(new Card(Color.BLUE, Symbol.ZERO, new NotExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-        deck.pushCard(new Card(Color.GREEN, Symbol.ZERO, new NotExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-        deck.pushCard(new Card(Color.RED, Symbol.ZERO, new NotExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-        deck.pushCard(new Card(Color.YELLOW, Symbol.ZERO, new NotExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-    }
-
-     void createNotZeros() {
-        for (int i = 1; i < 10; i++) {
-            deck.pushCard(new Card(Color.BLUE, Symbol.getNumeric()[i], new NotExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-            deck.pushCard(new Card(Color.GREEN, Symbol.getNumeric()[i], new NotExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-            deck.pushCard(new Card(Color.RED, Symbol.getNumeric()[i], new NotExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-            deck.pushCard(new Card(Color.YELLOW, Symbol.getNumeric()[i], new NotExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-        }
-    }
-
-    private void createActionCards() {
+    void createActionCards() {
         createInvertCards();
         createSkipTurnCards();
         createPlusTwoCards();
     }
 
-    private void createWildCards() {
-        createColorWildCards();
-        createPlusFourWildCards();
+    void createWildCards() {
+        for (int i = 0; i < 4; i++) {
+            deck.pushCard(new Card(Color.NONE, Symbol.WILD_DRAW_FOUR, new PlusFourExecuteActionStrategy(), new UncoloredIsPlayableOverStrategy()));
+            deck.pushCard(new Card(Color.NONE, Symbol.WILD,new ChangeColorExecuteActionStrategy(), new UncoloredIsPlayableOverStrategy()));
+        }
     }
 
     private void createInvertCards() {
@@ -80,18 +53,6 @@ public class OfficialDeck implements IDeckStrategy {
             deck.pushCard(new Card(Color.RED, Symbol.DRAW_TWO, new PlusTwoExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
             deck.pushCard(new Card(Color.GREEN, Symbol.DRAW_TWO, new PlusTwoExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
             deck.pushCard(new Card(Color.YELLOW, Symbol.DRAW_TWO, new PlusTwoExecuteActionStrategy(), new ColoredIsPlayableOverStrategy()));
-        }
-    }
-
-    private void createColorWildCards(){
-        for (int i = 0; i < 4; i++) {
-            deck.pushCard(new Card(Color.NONE, Symbol.WILD,new ChangeColorExecuteActionStrategy(), new UncoloredIsPlayableOverStrategy()));
-        }
-    }
-
-    private void createPlusFourWildCards() {
-        for (int i = 0; i < 4; i++) {
-            deck.pushCard(new Card(Color.NONE, Symbol.WILD_DRAW_FOUR, new PlusFourExecuteActionStrategy(), new UncoloredIsPlayableOverStrategy()));
         }
     }
 }
