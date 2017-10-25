@@ -36,7 +36,7 @@ public interface IGameLogic {
     /**
      * Allows to autoshout UNO if a player has only one card.
      *
-     * @param ctrl
+     * @param ctrl Controller used by the game.
      */
     void autoShoutUNO(IController ctrl);
 

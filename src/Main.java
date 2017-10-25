@@ -1,4 +1,5 @@
 import controller.ConsoleController;
+import controller.IController;
 import model.GameLogic;
 import model.IGameLogic;
 import model.card.deck.OfficialDeckStrategy;
@@ -31,7 +32,7 @@ public class Main {
 
         IGameLogic game = new GameLogic((new OfficialDeckStrategy()).createDeck(), new PlayerManager(playerBuilder.buildPlayerList()));
         ConsoleView view = new ConsoleView(game);
-        ConsoleController ctrl = new ConsoleController(game, view);
+        IController ctrl = new ConsoleController(game, view);
         while (!game.hasEnded()) {
             ctrl.playTurn();
         }

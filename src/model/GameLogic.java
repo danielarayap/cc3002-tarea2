@@ -5,6 +5,7 @@ import controller.IController;
 import model.card.ICardPile;
 import model.card.ICardPilesManager;
 import model.card.type.ICard;
+import model.player.IPlayerManager;
 import model.player.PlayerManager;
 import model.player.type.IPlayer;
 
@@ -13,12 +14,14 @@ import java.util.ArrayList;
 public class GameLogic implements IGameLogic {
 
     private ICardPilesManager pilesManager;
-    private ICardPile mazo, descarte;
-    private PlayerManager jugadores;
+    private ICardPile mazo;
+    private IPlayerManager jugadores;
     private ICard currentPlayedCard;
+    private int drawWell;
     private boolean gameHasEnded = false;
 
-    public GameLogic(ICardPile mazo, PlayerManager jugadores) {
+    public GameLogic(ICardPile mazo, IPlayerManager jugadores) {
+        this.pilesManager=pilesManager;
         this.mazo = mazo;
         this.jugadores = jugadores;
         if (jugadores.getPlayers().size() <= 10 || jugadores.getPlayers().size() >= 2)
@@ -63,8 +66,6 @@ public class GameLogic implements IGameLogic {
         jugadores.skipPlayer();
     }
 
-    private int drawWell;
-
     @Override
     public void addToDrawWell(int number) {
         drawWell += number;
@@ -82,9 +83,6 @@ public class GameLogic implements IGameLogic {
 
     @Override
     public void drawCardsFromWell(IPlayer player, IController ctrl) {
-        /*
-        pilesManager.drawCards(drawWell);
-         */
         for (int i = 0; i < drawWell; i++) {
             this.drawOneCard(player);
         }
@@ -100,14 +98,9 @@ public class GameLogic implements IGameLogic {
 
     @Override
     public boolean playCard(ICard playedCard, IController ctrl) {
-
         if (playedCard.isPlayableOver(getCurrentPlayedCard())) {
-
             getCurrentPlayer().removeCardFromHand(playedCard);
-
             playedCard.executeAction(this, ctrl);
-
-            //Verificar si jugador gano
             if (getCurrentPlayer().hasWon()) {
                 gameHasEnded = true;
                 return true;
