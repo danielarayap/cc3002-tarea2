@@ -12,6 +12,10 @@ import model.card.type.isPlayableOver.UncoloredIsPlayableOverStrategy;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * This class allows to specify a getCardToPlay strategy for the virtual players.
+ * @author daraya
+ */
 public class RandomCardToPlay implements CardToPlayStrategy {
     @Override
     public ICard getCardToPlay(IGameLogic game, IController ctrl, ArrayList<ICard> cartas) {

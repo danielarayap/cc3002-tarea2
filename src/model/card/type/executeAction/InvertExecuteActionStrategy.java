@@ -4,7 +4,11 @@ import controller.IController;
 import model.IGameLogic;
 import model.card.type.Card;
 import model.card.type.executeAction.ExecuteActionStrategy;
-
+/**
+ * This class specifies the executeAction method for the invert direction card
+ *
+ * @author daraya
+ */
 public class InvertExecuteActionStrategy implements ExecuteActionStrategy {
 
     @Override

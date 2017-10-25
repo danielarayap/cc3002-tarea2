@@ -13,6 +13,10 @@ import model.card.type.isPlayableOver.UncoloredIsPlayableOverStrategy;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * This class allows to specify a getCardToPlay strategy for the human players.
+ * @author daraya
+ */
 public class HumanCardToPlay implements CardToPlayStrategy {
     @Override
     public ICard getCardToPlay(IGameLogic game, IController ctrl, ArrayList<ICard> cartas) {

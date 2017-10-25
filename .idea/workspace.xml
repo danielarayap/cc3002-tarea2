@@ -2,8 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eaef934-023d-4ad3-bdb1-0d3317654876" name="Default" comment="bla">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/deck/NumericDeck.java" afterPath="$PROJECT_DIR$/src/model/card/deck/NumericDeck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/deck/OfficialDeck.java" afterPath="$PROJECT_DIR$/src/model/card/deck/OfficialDeck.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/card/deck/NumericDeck.java" afterPath="$PROJECT_DIR$/src/model/card/deck/NumericDeckStrategy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/card/deck/OfficialDeck.java" afterPath="$PROJECT_DIR$/src/model/card/deck/OfficialDeckStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/deck/DeckStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/deck/DeckStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/Card.java" afterPath="$PROJECT_DIR$/src/model/card/type/Card.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/NullCard.java" afterPath="$PROJECT_DIR$/src/model/card/type/NullCard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/executeAction/ChangeColorExecuteActionStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/executeAction/ChangeColorExecuteActionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/executeAction/DrawCardsActionStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/executeAction/DrawCardsActionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/executeAction/ExecuteActionStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/executeAction/ExecuteActionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/executeAction/InvertExecuteActionStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/executeAction/InvertExecuteActionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/executeAction/NotExecuteActionStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/executeAction/NotExecuteActionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/executeAction/PlusFourExecuteActionStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/executeAction/PlusFourExecuteActionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/executeAction/PlusTwoExecuteActionStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/executeAction/PlusTwoExecuteActionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/executeAction/SkipExecuteActionStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/executeAction/SkipExecuteActionStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/isPlayableOver/ColoredIsPlayableOverStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/isPlayableOver/ColoredIsPlayableOverStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/isPlayableOver/IsPlayableOverStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/isPlayableOver/IsPlayableOverStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/card/type/isPlayableOver/UncoloredIsPlayableOverStrategy.java" afterPath="$PROJECT_DIR$/src/model/card/type/isPlayableOver/UncoloredIsPlayableOverStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/player/PlayerListBuilder.java" afterPath="$PROJECT_DIR$/src/model/player/PlayerListBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/player/selectColor/HumanSelectColorStrategy.java" afterPath="$PROJECT_DIR$/src/model/player/selectColor/HumanSelectColorStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/player/selectColor/RandomSelectColorStrategy.java" afterPath="$PROJECT_DIR$/src/model/player/selectColor/RandomSelectColorStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/player/selectColor/SelectColorStrategy.java" afterPath="$PROJECT_DIR$/src/model/player/selectColor/SelectColorStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/player/type/CardToPlayStrategy.java" afterPath="$PROJECT_DIR$/src/model/player/type/CardToPlayStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/player/type/HumanCardToPlay.java" afterPath="$PROJECT_DIR$/src/model/player/type/HumanCardToPlay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/player/type/RandomCardToPlay.java" afterPath="$PROJECT_DIR$/src/model/player/type/RandomCardToPlay.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,48 +44,7 @@
     <favorites_list name="cc3002-tarea2" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ICardPilesManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/card/ICardPilesManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICardPile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/card/ICardPile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardPile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/card/CardPile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-205">
-              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardPilesManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/card/CardPilesManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -120,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/card/type/WildCard.java" />
         <option value="$PROJECT_DIR$/src/model/card/deck/TestDeck.java" />
         <option value="$PROJECT_DIR$/src/model/player/type/RandomPlayer.java" />
         <option value="$PROJECT_DIR$/src/model/player/type/HumanPlayer.java" />
@@ -130,47 +111,48 @@
         <option value="$PROJECT_DIR$/src/model/card/type/ExecuteActionStrategy.java" />
         <option value="$PROJECT_DIR$/src/model/card/type/NotExecuteActionStrategy.java" />
         <option value="$PROJECT_DIR$/src/model/card/type/InvertExecuteActionStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/ExecuteActionStrategy.java" />
         <option value="$PROJECT_DIR$/src/model/card/type/executeAction/DrawCardsAction.java" />
         <option value="$PROJECT_DIR$/src/model/card/type/isPlayableOver/ColoredIsPlayableOver.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/isPlayableOver/IsPlayableOverStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/isPlayableOver/ColoredIsPlayableOverStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/NotExecuteActionStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/SkipExecuteActionStrategy.java" />
         <option value="$PROJECT_DIR$/src/model/card/type/executeAction/ChangeColorStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/player/selectColor/SelectColorStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/NullCard.java" />
-        <option value="$PROJECT_DIR$/src/model/player/selectColor/RandomSelectColorStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/player/type/CardToPlayStrategy.java" />
         <option value="$PROJECT_DIR$/src/model/player/type/IPlayer.java" />
         <option value="$PROJECT_DIR$/src/model/IGameLogic.java" />
         <option value="$PROJECT_DIR$/src/model/card/type/ICard.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/Card.java" />
         <option value="$PROJECT_DIR$/src/model/player/type/Player.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/ChangeColorExecuteActionStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/player/type/HumanCardToPlay.java" />
-        <option value="$PROJECT_DIR$/src/model/player/type/RandomCardToPlay.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/DrawCardsActionStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/PlusTwoExecuteActionStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/PlusFourExecuteActionStrategy.java" />
         <option value="$PROJECT_DIR$/src/view/ConsoleView.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/InvertExecuteActionStrategy.java" />
         <option value="$PROJECT_DIR$/src/model/player/IPlayerListBuilder.java" />
         <option value="$PROJECT_DIR$/src/model/card/CardPilesManager.java" />
         <option value="$PROJECT_DIR$/src/model/card/CardPile.java" />
         <option value="$PROJECT_DIR$/src/model/GameLogic.java" />
-        <option value="$PROJECT_DIR$/src/model/player/PlayerListBuilder.java" />
         <option value="$PROJECT_DIR$/src/model/player/PlayerManager.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/controller/ConsoleController.java" />
         <option value="$PROJECT_DIR$/src/model/card/deck/IDeckStrategy.java" />
         <option value="$PROJECT_DIR$/src/controller/IController.java" />
         <option value="$PROJECT_DIR$/src/model/card/deck/DeckBuilder.java" />
-        <option value="$PROJECT_DIR$/src/model/card/type/isPlayableOver/UncoloredIsPlayableOverStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/player/selectColor/HumanSelectColorStrategy.java" />
         <option value="$PROJECT_DIR$/src/model/card/deck/OfficialDeck.java" />
         <option value="$PROJECT_DIR$/src/model/card/deck/NumericDeck.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/ExecuteActionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/ChangeColorExecuteActionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/DrawCardsActionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/InvertExecuteActionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/NotExecuteActionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/PlusFourExecuteActionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/PlusTwoExecuteActionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/executeAction/SkipExecuteActionStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/isPlayableOver/IsPlayableOverStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/isPlayableOver/UncoloredIsPlayableOverStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/isPlayableOver/ColoredIsPlayableOverStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/NullCard.java" />
+        <option value="$PROJECT_DIR$/src/model/card/type/Card.java" />
+        <option value="$PROJECT_DIR$/src/model/card/deck/OfficialDeckStrategy.java" />
         <option value="$PROJECT_DIR$/src/model/card/deck/DeckStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/player/selectColor/SelectColorStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/player/selectColor/RandomSelectColorStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/player/selectColor/HumanSelectColorStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/player/type/CardToPlayStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/player/type/HumanCardToPlay.java" />
+        <option value="$PROJECT_DIR$/src/model/player/type/RandomCardToPlay.java" />
+        <option value="$PROJECT_DIR$/src/model/player/PlayerListBuilder.java" />
       </list>
     </option>
   </component>
@@ -309,32 +291,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="selectColor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cc3002-tarea2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cc3002-tarea2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="card" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -387,7 +343,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="deck" />
+              <option name="myItemId" value="type" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="executeAction" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -880,16 +840,15 @@
       <workItem from="1508599887645" duration="3093000" />
       <workItem from="1508641738675" duration="4811000" />
       <workItem from="1508711391872" duration="41000" />
-      <workItem from="1508719534703" duration="48957000" />
+      <workItem from="1508719534703" duration="51751000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66135000" />
+    <option name="totallyTimeSpent" value="68929000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -906,9 +865,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3371522" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3371522" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -982,14 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/IController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/card/deck/DeckBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -998,196 +949,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/ChangeColorExecuteActionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/DrawCardsActionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/ExecuteActionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="69" lean-forward="false" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/InvertExecuteActionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/NotExecuteActionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/PlusFourExecuteActionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/PlusTwoExecuteActionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/SkipExecuteActionStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/isPlayableOver/ColoredIsPlayableOverStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/isPlayableOver/IsPlayableOverStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/isPlayableOver/UncoloredIsPlayableOverStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/ICard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/type/NullCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/card/type/Symbol.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/selectColor/HumanSelectColorStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/selectColor/RandomSelectColorStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/selectColor/SelectColorStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/type/CardToPlayStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/type/HumanCardToPlay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/type/IPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/type/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/type/RandomCardToPlay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1212,14 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/PlayerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -1256,20 +1013,78 @@
         <state relative-caret-position="68">
           <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
           <folding>
-            <marker date="1508915675976" expanded="true" signature="597:629" ph="/**...*/" />
+            <marker date="1508963879032" expanded="true" signature="506:538" ph="/**...*/" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/deck/OfficialDeck.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/IController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="56" column="5" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="782">
+          <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/deck/NumericDeck.java">
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/NullCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/ICard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/PlusTwoExecuteActionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/deck/IDeckStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/deck/DeckStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="60" column="88" lean-forward="false" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/deck/OfficialDeckStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/deck/NumericDeckStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -1277,51 +1092,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/deck/DeckStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/ChangeColorExecuteActionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="51">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/DrawCardsActionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="95" lean-forward="false" selection-start-line="6" selection-start-column="95" selection-end-line="6" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/deck/IDeckStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/InvertExecuteActionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="7" column="73" lean-forward="false" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/player/PlayerListBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/NotExecuteActionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="85">
+          <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/ICardPilesManager.java">
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/PlusFourExecuteActionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="68">
+          <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/card/ICardPile.java">
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/SkipExecuteActionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="68">
+          <caret line="6" column="75" lean-forward="false" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/isPlayableOver/ColoredIsPlayableOverStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="97" lean-forward="false" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/isPlayableOver/IsPlayableOverStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/isPlayableOver/UncoloredIsPlayableOverStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/Card.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/card/CardPile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-205">
+        <state relative-caret-position="17">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding />
         </state>
@@ -1329,8 +1184,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/card/CardPilesManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="346">
           <caret line="50" column="42" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/ICardPile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/ICardPilesManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/card/type/executeAction/ExecuteActionStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/selectColor/HumanSelectColorStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="68" lean-forward="false" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/selectColor/RandomSelectColorStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/selectColor/SelectColorStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/type/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/type/IPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/type/CardToPlayStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/PlayerListBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/PlayerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="45" column="65" lean-forward="true" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/type/HumanCardToPlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/player/type/RandomCardToPlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="72" lean-forward="false" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
           <folding />
         </state>
       </provider>

@@ -18,8 +18,6 @@ public class PlayerListBuilder implements IPlayerListBuilder{
 
     @Override
     public ArrayList<IPlayer> buildPlayerList() {
-        ArrayList<IPlayer> aux = players;
-        //players.clear();
-        return aux;
+        return players;
     }
 }

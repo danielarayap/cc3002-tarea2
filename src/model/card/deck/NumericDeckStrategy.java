@@ -9,11 +9,11 @@ import model.card.type.Symbol;
 import model.card.type.isPlayableOver.ColoredIsPlayableOverStrategy;
 
 /**
- * This class represents the NumericDeck creation strategy
+ * This class represents the NumericDeckStrategy creation strategy
  * @author daraya
  *
  */
-public class NumericDeck extends DeckStrategy {
+public class NumericDeckStrategy extends DeckStrategy {
 
     private ICardPile deck = new CardPile();
 

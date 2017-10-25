@@ -6,7 +6,9 @@ import model.card.type.executeAction.ExecuteActionStrategy;
 import model.card.type.isPlayableOver.IsPlayableOverStrategy;
 
 /**
- * Created by Daniel Araya on 21-10-2017.
+ * The concrete class for defining UNO Cards.
+ * @author daraya
+ *
  */
 public class Card implements ICard {
     private Color color;

@@ -3,6 +3,11 @@ package model.card.type;
 import controller.IController;
 import model.IGameLogic;
 
+/**
+ * This class is for defining UNO NullCards. Here I used the NullObject Pattern
+ * @author daraya
+ *
+ */
 public class NullCard implements ICard {
     @Override
     public boolean isPlayableOver(ICard otherCard) {
