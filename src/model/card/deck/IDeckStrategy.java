@@ -9,10 +9,10 @@ import model.card.ICardPile;
  */
 public interface IDeckStrategy {
 
-    /**
-     * Creates a UNO Deck, i.e. a collection of UNO Cards.
-     *
-     * @return a collection of UNO Cards
-     */
-    ICardPile createDeck();
+  /**
+   * Creates a UNO Deck, i.e. a collection of UNO Cards.
+   *
+   * @return a collection of UNO Cards
+   */
+  ICardPile createDeck();
 }

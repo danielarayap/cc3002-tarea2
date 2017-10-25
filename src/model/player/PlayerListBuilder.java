@@ -9,15 +9,16 @@ import model.player.type.RandomCardToPlay;
 
 import java.util.ArrayList;
 
-public class PlayerListBuilder implements IPlayerListBuilder{
-    private ArrayList<IPlayer> players = new ArrayList<>(10);
-    @Override
-    public void addPlayer(IPlayer player) {
-        players.add(player);
-    }
+public class PlayerListBuilder implements IPlayerListBuilder {
+  private ArrayList<IPlayer> players = new ArrayList<>(10);
 
-    @Override
-    public ArrayList<IPlayer> buildPlayerList() {
-        return players;
-    }
+  @Override
+  public void addPlayer(IPlayer player) {
+    players.add(player);
+  }
+
+  @Override
+  public ArrayList<IPlayer> buildPlayerList() {
+    return players;
+  }
 }

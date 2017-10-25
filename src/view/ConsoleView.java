@@ -12,58 +12,58 @@ import model.player.type.IPlayer;
  */
 public class ConsoleView {
 
-    IGameLogic game;
+  IGameLogic game;
 
-    /**
-     * Constructor of the view. Associates a game to it.
-     *
-     * @param game
-     */
-    public ConsoleView(IGameLogic game) {
-        this.game = game;
-    }
+  /**
+   * Constructor of the view. Associates a game to it.
+   *
+   * @param game
+   */
+  public ConsoleView(IGameLogic game) {
+    this.game = game;
+  }
 
-    /**
-     * Updates the current status of the game.
-     */
-    public void updateCurrentStatus() {
-        showMessage("[Turno Actual]: " + game.getCurrentPlayer());
-    }
+  /**
+   * Updates the current status of the game.
+   */
+  public void updateCurrentStatus() {
+    showMessage("[Turno Actual]: " + game.getCurrentPlayer());
+  }
 
-    /**
-     * Shows a player's hand.
-     *
-     * @param player player with the hand you need to show.
-     */
-    public void showPlayerHand(IPlayer player) {
-        System.out.println("[Mano]:");
-        int i = 0;
-        for (ICard card : player.getHand()) {
-            System.out.println(i + ") " + card);
-            i++;
-        }
+  /**
+   * Shows a player's hand.
+   *
+   * @param player player with the hand you need to show.
+   */
+  public void showPlayerHand(IPlayer player) {
+    System.out.println("[Mano]:");
+    int i = 0;
+    for (ICard card : player.getHand()) {
+      System.out.println(i + ") " + card);
+      i++;
     }
+  }
 
-    /**
-     * Shows a custom message.
-     *
-     * @param message custom message
-     */
-    public void showMessage(String message) {
-        System.out.println(message);
-    }
+  /**
+   * Shows a custom message.
+   *
+   * @param message custom message
+   */
+  public void showMessage(String message) {
+    System.out.println(message);
+  }
 
-    /**
-     * Shows the last card played.
-     *
-     * @param player
-     * @param card
-     */
-    public void updatePlayedCard() {
-        showMessage("[Carta Descartada]: " + game.getCurrentPlayedCard());
-    }
+  /**
+   * Shows the last card played.
+   *
+   * @param player
+   * @param card
+   */
+  public void updatePlayedCard() {
+    showMessage("[Carta Descartada]: " + game.getCurrentPlayedCard());
+  }
 
-    public void updateColor(Color color) {
-        showMessage("[Nuevo Color]:" + color.getName());
-    }
+  public void updateColor(Color color) {
+    showMessage("[Nuevo Color]:" + color.getName());
+  }
 }

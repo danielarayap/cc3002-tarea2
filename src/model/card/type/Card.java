@@ -7,59 +7,61 @@ import model.card.type.isPlayableOver.IsPlayableOverStrategy;
 
 /**
  * The concrete class for defining UNO Cards.
+ * 
  * @author daraya
  *
  */
 public class Card implements ICard {
-    private Color color;
-    private Symbol symbol;
-    private ExecuteActionStrategy actionStrategy;
-    private IsPlayableOverStrategy playableOverStrategy;
+  private Color color;
+  private Symbol symbol;
+  private ExecuteActionStrategy actionStrategy;
+  private IsPlayableOverStrategy playableOverStrategy;
 
-    public Card(Color color, Symbol symbol, ExecuteActionStrategy actionStrategy, IsPlayableOverStrategy playableOverStrategy) {
-        this.color = color;
-        this.symbol = symbol;
-        this.actionStrategy = actionStrategy;
-        this.playableOverStrategy = playableOverStrategy;
-    }
+  public Card(Color color, Symbol symbol, ExecuteActionStrategy actionStrategy,
+      IsPlayableOverStrategy playableOverStrategy) {
+    this.color = color;
+    this.symbol = symbol;
+    this.actionStrategy = actionStrategy;
+    this.playableOverStrategy = playableOverStrategy;
+  }
 
-    @Override
-    public boolean isPlayableOver(ICard otherCard) {
-        return playableOverStrategy.isPlayableOver(this, otherCard);
-    }
+  @Override
+  public boolean isPlayableOver(ICard otherCard) {
+    return playableOverStrategy.isPlayableOver(this, otherCard);
+  }
 
-    @Override
-    public boolean isFirstPlayable() {
-        return true; //cualquiera se puede depositar como primera carta
-    }
+  @Override
+  public boolean isFirstPlayable() {
+    return true; // cualquiera se puede depositar como primera carta
+  }
 
-    @Override
-    public Color getColor() {
-        return color;
-    }
+  @Override
+  public Color getColor() {
+    return color;
+  }
 
-    @Override
-    public Symbol getSymbol() {
-        return symbol;
-    }
+  @Override
+  public Symbol getSymbol() {
+    return symbol;
+  }
 
-    @Override
-    public void executeAction(IGameLogic game, IController ctrl) { //no hace nada
-        actionStrategy.executeAction(game, ctrl, this);
-    }
+  @Override
+  public void executeAction(IGameLogic game, IController ctrl) { // no hace nada
+    actionStrategy.executeAction(game, ctrl, this);
+  }
 
-    @Override
-    public boolean isDiscardable() {
-        return false; //???
-    }
+  @Override
+  public boolean isDiscardable() {
+    return false; // ???
+  }
 
-    @Override
-    public void setColor(Color color) {
-        this.color = color;
-    }
+  @Override
+  public void setColor(Color color) {
+    this.color = color;
+  }
 
-    @Override
-    public String toString() {
-        return "Color: " + this.color.getName() + ", Simbolo: " + this.symbol.getName();
-    }
+  @Override
+  public String toString() {
+    return "Color: " + this.color.getName() + ", Simbolo: " + this.symbol.getName();
+  }
 }

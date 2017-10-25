@@ -10,20 +10,21 @@ import model.card.type.isPlayableOver.ColoredIsPlayableOverStrategy;
 
 /**
  * This class represents the NumericDeckStrategy creation strategy
+ * 
  * @author daraya
  *
  */
 public class NumericDeckStrategy extends DeckStrategy {
 
-    private ICardPile deck = new CardPile();
+  private ICardPile deck = new CardPile();
 
-    @Override
-    void createActionCards() {
-        //doNothing
-    }
+  @Override
+  void createActionCards() {
+    // doNothing
+  }
 
-    @Override
-    void createWildCards() {
-        //doNothing
-    }
+  @Override
+  void createWildCards() {
+    // doNothing
+  }
 }

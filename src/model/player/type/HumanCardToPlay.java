@@ -15,16 +15,18 @@ import java.util.Random;
 
 /**
  * This class allows to specify a getCardToPlay strategy for the human players.
+ * 
  * @author daraya
  */
 public class HumanCardToPlay implements CardToPlayStrategy {
-    @Override
-    public ICard getCardToPlay(IGameLogic game, IController ctrl, ArrayList<ICard> cartas) {
-        if (!game.isDrawWellEmpty()) {
-            return new Card(Color.NONE, Symbol.NONE, new DrawCardsActionStrategy(),new UncoloredIsPlayableOverStrategy());
-        } else {
-            return cartas.get(ctrl.AskForCardFromHand(game.getCurrentPlayer()));
-        }
+  @Override
+  public ICard getCardToPlay(IGameLogic game, IController ctrl, ArrayList<ICard> cartas) {
+    if (!game.isDrawWellEmpty()) {
+      return new Card(Color.NONE, Symbol.NONE, new DrawCardsActionStrategy(),
+          new UncoloredIsPlayableOverStrategy());
+    } else {
+      return cartas.get(ctrl.AskForCardFromHand(game.getCurrentPlayer()));
     }
+  }
 
 }
